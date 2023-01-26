@@ -5,13 +5,21 @@ body{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    background-color: #edf6f9;
 }
 
 /* BARRA DE NAVEGACION */
 .nav-container{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 80px;
+    grid-template-rows: 150px;
+    
+}
+
+.nav-container .img-container img{
+    height: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .nav-container .nav-links{
@@ -23,13 +31,23 @@ body{
 .nav-container .nav-links a{
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     color: black;
     text-align: center;
     align-self: center;
 }
+
+.nav-container .nav-links a:hover{
+    color: blueviolet;
+}
+
+
 /* 
 INTRODUCCION */
+.introduction-container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 .introduction-container .int-container{
     width: 100%;
@@ -39,6 +57,8 @@ INTRODUCCION */
 .int-container img{
     width: 100%;
     filter: brightness(75%);
+    height: 600px;
+    border-radius: 2px;
 }
 
 .int-container p{
@@ -49,3 +69,77 @@ INTRODUCCION */
     color: white;
     font-size: 25px;
 }
+
+/* DEPORTES */
+
+.h2-sports{
+    text-align: center;
+}
+
+.sports-container img{
+    width: 30%;
+    height: 30%;
+}
+
+.sports-container .futbol-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.futbol-div img{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.futbol-div p{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sports-container .voley-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.voley-div img{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.voley-div p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sports-container .handball-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.handball-div img{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.handball-div p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sports-container .basket-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.basket-div img{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.basket-div p{
+    width: 80%;
+    margin: 0 auto;
+}
+
